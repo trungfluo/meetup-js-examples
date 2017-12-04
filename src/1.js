@@ -1,6 +1,6 @@
 // @flow
 
-type Estimation = 'GOOD' | 'PASSABLE' | 'BAD' | 'NEUTRAL';
+type Estimation = 'GOOD' | 'PASSABLE' | 'BAD';
 type Vehicle = {
   info: {
     estimation: Estimation,
@@ -13,8 +13,8 @@ type ApiVehicle = {
   },
 };
 
-function toApiVehicle(ref: Vehicle): ApiVehicle {
+const toApiVehicle = (vehicle: Vehicle): ApiVehicle => {
   return {
-    info: ref.info,
+    info: vehicle.info,
   };
-}
+};
