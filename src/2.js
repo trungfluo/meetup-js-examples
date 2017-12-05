@@ -1,22 +1,11 @@
-/* @flow */
+// @flow
 
-type Profession = {
-  title: string,
-  salary: number,
-};
-type People = { [title: string]: Profession };
+// const variable: number = 5;
+// const any_typed_variable: any = variable;
+// const mixed_typed_varible: mixed = variable;
 
-const people: People = {
-  Thomas: {
-    title: 'Teacher',
-    salary: 10000,
-  },
-  Kenzo: {
-    title: 'Engineer',
-    salary: 20000,
-  },
-};
+// const any_typed_variable: any = 5;
+// const variable: number = any_typed_variable;
 
-const salaries: Array<number> = Object.values(people).map(person => {
-  return person.salary;
-});
+// const mixed_type_variable: mixed = 5;
+// const variable: number = mixed_type_variable;

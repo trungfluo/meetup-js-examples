@@ -18,3 +18,17 @@ const toApiVehicle = (vehicle: Vehicle): ApiVehicle => {
     info: vehicle.info,
   };
 };
+
+// const vehicle = {
+//   info: {
+//     estimation: 'GOOD',
+//   },
+// };
+
+// const apiVehicle = toApiVehicle(vehicle);
+
+// console.log('vehicle = ', vehicle);
+// console.log('apiVehicle = ', apiVehicle);
+// apiVehicle.info.estimation = null;
+// console.log('vehicle = ', vehicle);
+// console.log('apiVehicle = ', apiVehicle);
